@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad gununu mubareydi Fifis 🎉</title>
+    <link rel="stylesheet" href="adgunu.css">
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-element">🎂</div>
+        <div class="floating-element">🎈</div>
+        <div class="floating-element">🎉</div>
+        <div class="floating-element">🎁</div>
+        <div class="floating-element">✨</div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Happy Birthday Fifis!</h1>
+            <p class="subtitle">Celebrating another amazing year of your life</p>
+        </header>
+
+        <section class="photo-section">
+            <h2 class="section-title">Beautiful Memories</h2>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <div class="photo-placeholder">
+                        
+                    </div>
+                    <p class="photo-caption">Your brightest smile</p>
+                </div>
+                <div class="photo-card">
+                    <div class="photo-placeholder">
+                        Add a fun moment photo here
+                    </div>
+                    <p class="photo-caption">Fun times together</p>
+                </div>
+                <div class="photo-card">
+                    <div class="photo-placeholder">
+                        Add another special photo here
+                    </div>
+                    <p class="photo-caption">Making memories</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2 class="section-title">About Amazing Fifis</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-label">Full Name</div>
+                    <div class="info-value">Fifis [Add Last Name]</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Birthday</div>
+                    <div class="info-value">[Add Birthday Date]</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Favorite Things</div>
+                    <div class="info-value">[Add her favorite hobbies, foods, colors, etc.]</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Special Qualities</div>
+                    <div class="info-value">[Add what makes her special - kindness, humor, talent, etc.]</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Dreams & Goals</div>
+                    <div class="info-value">[Add her aspirations and dreams]</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Friendship Since</div>
+                    <div class="info-value">[Add when you became friends]</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wishes-section">
+            <h2 class="section-title">Birthday Wishes</h2>
+            <div class="birthday-message">
+                "Dear Fifis, on this special day, I want you to know how grateful I am to have you as a friend. 
+                Your [add personal qualities like 'kindness', 'laughter', 'support'] has brought so much joy to my life. 
+                May this new year of your life be filled with endless happiness, exciting adventures, and all your dreams coming true. 
+                You deserve all the wonderful things life has to offer!"
+                <br><br>
+                Happy Birthday, dear friend! 🎉🎂✨
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Add some interactive sparkle effects
+        document.addEventListener('DOMContentLoaded', function() {
+            createSparkles();
+        });
+
+        function createSparkles() {
+            const sparkleContainer = document.body;
+            
+            setInterval(() => {
+                const sparkle = document.createElement('div');
+                sparkle.style.position = 'fixed';
+                sparkle.style.left = Math.random() * 100 + 'vw';
+                sparkle.style.top = Math.random() * 100 + 'vh';
+                sparkle.style.fontSize = '1rem';
+                sparkle.style.color = 'rgba(255, 255, 255, 0.8)';
+                sparkle.style.pointerEvents = 'none';
+                sparkle.style.zIndex = '1000';
+                sparkle.innerHTML = '✨';
+                sparkle.style.animation = 'sparkle 2s ease-out forwards';
+                
+                sparkleContainer.appendChild(sparkle);
+                
+                setTimeout(() => {
+                    sparkle.remove();
+                }, 2000);
+            }, 3000);
+        }
+
+        // Add sparkle animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes sparkle {
+                0% { transform: scale(0) rotate(0deg); opacity: 1; }
+                50% { transform: scale(1) rotate(180deg); opacity: 1; }
+                100% { transform: scale(0) rotate(360deg); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
